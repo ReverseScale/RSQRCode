@@ -27,13 +27,39 @@
 
 
 ## Usage 使用方法
-### 第一步 引入头文件
+### 代理部分
 ```
-#import "OrderDic.h"
-```
-### 第二步 简单调用
-```
-[OrderDic order:dic]
+#pragma mark - UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    __weak __typeof(self) weakSelf = self;
+    [picker dismissViewControllerAnimated:YES completion:^{
+        UIImage *image = info[UIImagePickerControllerOriginalImage];
+        
+        CIDetector *detector = [CIDetector detectorOfType:CIDetectorTypeQRCode
+                                                  context:nil
+                                                  options:@{CIDetectorAccuracy:CIDetectorAccuracyHigh}];
+        
+        NSArray *features = [detector featuresInImage:[CIImage imageWithCGImage:image.CGImage]];
+        if (features.count >= 1) {
+            CIQRCodeFeature *feature = [features firstObject];
+            
+            BOOL isURL = [weakSelf getUrlLink:feature.messageString];
+            
+            if (isURL) {
+                
+                [self pushWebViewWithURLSring:feature.messageString];
+                
+            } else {
+                
+                [self piushTextViewWithTextString:feature.messageString];
+                
+            }
+        } else {
+            [weakSelf showAlertWithTitle:@"提示" message:@"没有发现二维码" handler:nil];
+        }
+        
+    }];
+}
 ```
 
 使用简单、效率高效、进程安全~~~如果你有更好的建议,希望不吝赐教!
