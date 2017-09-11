@@ -6,34 +6,20 @@
 ![](https://img.shields.io/badge/download-791K-brightgreen.svg)
 ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 
+在微信的教育下，二维码逐渐走进了我们的生活，不少 App 也加入了扫码的功能，其实用起来也不是很麻烦。
 
-
-| 名称 |1.列表页 |2.展示页 |3.结果页 |
-| ------------- | ------------- | ------------- | ------------- |
-| 截图 | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/49394070.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/43197086.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-7-6/14637275.jpg) |
-| 描述 | 通过 storyboard 搭建基本框架 | 字典排列前 | 字典排列后 |
+| 名称 |1.列表页 |2.扫码页 |3.生成页 |2.文字页 |3.跳转页 |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 截图 | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-11/38354487.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-11/49440995.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-11/34429816.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-11/5425620.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-9-11/5490036.jpg) |
+| 描述 | 通过 storyboard 搭建基本框架 | 扫描摄像头下二维码 | 根据文本生成二维码 | 二维码扫描结果 | 扫到网页进行跳转 |
 
 
 ## Advantage 框架的优势
 * 1.文件少，代码简洁
-* 2.不依赖任何其他第三方库
-* 3.同时支持本地图片/Gif及网络图片/Gif
-* 4.自带图片下载与缓存
-* 5.具备较高自定义性
+* 2.功能完善，使用简单
+* 3.自带 WebView 跳转
+* 4.具备较高自定义性
 
-## Installation 安装
-### 1.手动安装:
-`下载Demo后,将功能文件夹拖入到项目中, 导入头文件后开始使用。`
-### 2.CocoaPods安装:
-修改“Podfile”文件
-```
-pod 'AutoAlignButtonTools',:git => 'https://github.com/ReverseScale/AutoAlignButtonToolsCocoapodsDemo.git'
-```
-控制台执行 Pods 安装命令 （ 简化安装：pod install --no-repo-update ）
-```
-pod install
-```
-> 如果 pod search 发现不是最新版本，在终端执行pod setup命令更新本地spec镜像缓存，重新搜索就OK了
 
 ## Requirements 要求
 * iOS 7+
