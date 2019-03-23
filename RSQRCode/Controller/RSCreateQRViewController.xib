@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NlL-ue-qeI">
-                    <rect key="frame" x="16" y="86" width="343" height="100"/>
+                    <rect key="frame" x="16" y="100" width="343" height="100"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="6I1-sA-2PA"/>
@@ -47,7 +46,7 @@
                     </userDefinedRuntimeAttributes>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asv-n0-Rge">
-                    <rect key="frame" x="145" y="211" width="85" height="30"/>
+                    <rect key="frame" x="145" y="225" width="85" height="30"/>
                     <color key="backgroundColor" red="0.044109365807194031" green="0.40140176653401244" blue="0.6262808902009489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title=" 生成二维码 ">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -57,13 +56,13 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7G5-qV-i7P">
-                    <rect key="frame" x="62" y="266" width="251" height="211"/>
+                    <rect key="frame" x="62" y="280" width="251" height="211"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="7G5-qV-i7P" secondAttribute="height" multiplier="251:211" id="Mvi-7C-42X"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgd-2Z-Yda">
-                    <rect key="frame" x="62" y="502" width="70" height="30"/>
+                    <rect key="frame" x="62" y="516" width="70" height="30"/>
                     <color key="backgroundColor" red="0.044109365807194031" green="0.40140176653401244" blue="0.6262808902009489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title=" 更改颜色 ">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -73,7 +72,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H18-Ez-rGJ">
-                    <rect key="frame" x="197" y="502" width="116" height="30"/>
+                    <rect key="frame" x="197" y="516" width="116" height="30"/>
                     <color key="backgroundColor" red="0.044109365807194031" green="0.40140176653401244" blue="0.6262808902009489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title=" 保存到手机相册 ">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,7 +89,7 @@
                 <constraint firstAttribute="trailing" secondItem="7G5-qV-i7P" secondAttribute="trailing" constant="62" id="Kqe-Yd-y2U"/>
                 <constraint firstItem="Rgd-2Z-Yda" firstAttribute="top" secondItem="7G5-qV-i7P" secondAttribute="bottom" constant="25" id="UWt-Vm-bMY"/>
                 <constraint firstItem="H18-Ez-rGJ" firstAttribute="top" secondItem="7G5-qV-i7P" secondAttribute="bottom" constant="25" id="bmJ-Vh-esg"/>
-                <constraint firstItem="NlL-ue-qeI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="gdV-2K-0et"/>
+                <constraint firstItem="NlL-ue-qeI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="gdV-2K-0et"/>
                 <constraint firstItem="H18-Ez-rGJ" firstAttribute="trailing" secondItem="7G5-qV-i7P" secondAttribute="trailing" id="gjG-KE-oe9"/>
                 <constraint firstItem="7G5-qV-i7P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lcj-L6-mmN"/>
                 <constraint firstItem="Asv-n0-Rge" firstAttribute="top" secondItem="NlL-ue-qeI" secondAttribute="bottom" constant="25" id="pT9-an-LxC"/>
