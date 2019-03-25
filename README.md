@@ -13,10 +13,6 @@
 | 截图 | ![](https://s2.ax1x.com/2019/03/23/AGrEAf.jpg) | ![](https://s2.ax1x.com/2019/03/23/AGrkHP.jpg) | ![](https://s2.ax1x.com/2019/03/23/AGrFBt.jpg) | 
 | 描述 | 通过 storyboard 搭建基本框架 | 扫描摄像头下二维码 | 根据文本生成二维码 |
 
-![AGrFBt.jpg](https://s2.ax1x.com/2019/03/23/AGrFBt.jpg)
-![AGrkHP.jpg](https://s2.ax1x.com/2019/03/23/AGrkHP.jpg)
-![AGrEAf.jpg](https://s2.ax1x.com/2019/03/23/AGrEAf.jpg)
-
 ## Advantage 框架的优势
 * 1.文件少，代码简洁
 * 2.功能完善，使用简单
